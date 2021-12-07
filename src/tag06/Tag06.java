@@ -28,7 +28,6 @@ public class Tag06 {
                     counter++;
                 }
             }
-            System.out.println("Day = " + (day + 1));
         }
         System.out.println(counter);
     }
