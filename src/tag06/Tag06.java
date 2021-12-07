@@ -16,7 +16,6 @@ public class Tag06 {
         for (double j : input) {
             fishes.add((int) j);
         }
-
         for (int day = 0; day < 80; day++) {
             double a = fishes.size();
             for (int i = 0; i < a; i++) {
