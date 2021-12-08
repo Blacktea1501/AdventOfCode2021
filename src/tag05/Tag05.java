@@ -22,18 +22,17 @@ public class Tag05 {
             point = line[1].split(",");
             x2 = new Point(Integer.parseInt(point[0]), Integer.parseInt(point[1]));
             vent = x1.checkPoints(x2);
-            graph = addPoint(graph, vent);
+            addPoint(graph, vent);
         }
         return getPoints(graph);
     }
 
-    public static Graph[][] addPoint(Graph[][] graph, List<Point> vent){
+    public static void addPoint(Graph[][] graph, List<Point> vent){
         if(!vent.isEmpty()){
             for(Point p : vent){
                 graph[(int) p.getX()][(int) p.getY()].setCounter();
             }
         }
-        return graph;
     }
 
     public static int getPoints(Graph[][] graph){
