@@ -34,6 +34,7 @@ public class Tag10 {
         }
         System.out.println(points);
 
+        // part 2
         List<Long> scores = new ArrayList<>();
         for (Stack<String> stack : goodLines){
             long p2 = 0;
