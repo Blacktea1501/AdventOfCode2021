@@ -1,6 +1,5 @@
 package tag10;
 
-import java.util.HashMap;
 
 public class Tag10 {
 
@@ -25,59 +24,55 @@ public class Tag10 {
         int cntC = 0;
         int cntD = 0;
 
-        for (int string = 0; string < input.length; string++) {
-            char x = input[string].charAt(0);
-            for (int c = 1; c < input[string].length(); c++) {
-                if (x == a1){
-                    if ( input[string].charAt(c) == a1){
+        for (String s : input) {
+            char x = s.charAt(0);
+            for (int c = 1; c < s.length(); c++) {
+                if (x == a1) {
+                    if (s.charAt(c) == a1) {
                         openCnt++;
                     }
-                    if (input[string].charAt(c) == a2){
+                    if (s.charAt(c) == a2) {
                         closedCnt++;
                     }
-                    if (openCnt < closedCnt){
+                    if (openCnt < closedCnt) {
                         cntA++;
                         break;
                     }
-                }
-                else if (x == b1){
-                    if ( input[string].charAt(c) == b1){
+                } else if (x == b1) {
+                    if (s.charAt(c) == b1) {
                         openCnt++;
                     }
-                    if (input[string].charAt(c) == b2){
+                    if (s.charAt(c) == b2) {
                         closedCnt++;
                     }
-                    if (openCnt < closedCnt){
+                    if (openCnt < closedCnt) {
                         cntB++;
                         break;
                     }
 
-                }
-                else if (x == c1){
-                    if ( input[string].charAt(c) == c1){
+                } else if (x == c1) {
+                    if (s.charAt(c) == c1) {
                         openCnt++;
                     }
-                    if (input[string].charAt(c) == c2){
+                    if (s.charAt(c) == c2) {
                         closedCnt++;
                     }
-                    if (openCnt < closedCnt){
+                    if (openCnt < closedCnt) {
                         cntC++;
                         break;
                     }
 
-                }
-                else if (x == d1){
-                    if ( input[string].charAt(c) == d1){
+                } else if (x == d1) {
+                    if (s.charAt(c) == d1) {
                         openCnt++;
                     }
-                    if (input[string].charAt(c) == d2){
+                    if (s.charAt(c) == d2) {
                         closedCnt++;
                     }
-                    if (openCnt < closedCnt){
+                    if (openCnt < closedCnt) {
                         cntD++;
                         break;
                     }
-
                 }
             }
             openCnt = 0;
