@@ -13,8 +13,8 @@ public class Tag07 {
         ArrayList<Integer> sums = new ArrayList<Integer>();
         for (int positionToMove = 0; positionToMove < max; positionToMove++) {
             int sum = 0;
-            for (int pos = 0; pos < horizontalPositions.length; pos++) {
-            sum += fuelCost2(horizontalPositions[pos], positionToMove);
+            for (int horizontalPosition : horizontalPositions) {
+                sum += fuelCost2(horizontalPosition, positionToMove);
             }
             sums.add(sum);
         }
@@ -31,7 +31,7 @@ public class Tag07 {
         Iterator<Integer> iterator = integers.iterator();
         for (int i = 0; i < ret.length; i++)
         {
-            ret[i] = iterator.next().intValue();
+            ret[i] = iterator.next();
         }
         return ret;
     }
