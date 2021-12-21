@@ -18,10 +18,8 @@ public class Tag13 {
             String line = sc.next();
             String[] coordinates = line.split(",");
             if (coordinates.length == 2) {
-                int x = Integer.parseInt(coordinates[0]);
-                int y = Integer.parseInt(coordinates[1]);
-                xCoordinates.add(x);
-                yCoordinates.add(y);
+                xCoordinates.add(Integer.parseInt(coordinates[0]));
+                yCoordinates.add(Integer.parseInt(coordinates[1]));
             }
             if (containsIn("x=", line) || containsIn("y=", line)) {
                 foldInstruction.add(line);
@@ -42,9 +40,6 @@ public class Tag13 {
         for (int i = 0; i < xCoordinates.size(); i++) {
             paper[yCoordinates.get(i)][xCoordinates.get(i)] = 1;
         }
-
-        // printing out the paper
-        //printMatrixOfInt(paper);
 
         part1(paper);
         part2(paper);
