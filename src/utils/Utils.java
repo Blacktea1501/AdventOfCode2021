@@ -29,8 +29,8 @@ public class Utils {
     }
 
     public static void printMatrixOfInt(int[][] matrix){
-        for (int[] objects : matrix) {
-            System.out.println(Arrays.toString(objects));
+        for (int[] ints : matrix) {
+            System.out.println(Arrays.toString(ints));
         }
     }
 }
