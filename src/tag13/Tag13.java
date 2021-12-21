@@ -28,8 +28,6 @@ public class Tag13 {
         int maxX = Collections.max(xCoordinates) + 1;
         int maxY = Collections.max(yCoordinates) + 1;
 
-        System.out.println("Columns = " + maxX + "\nRows = " + maxY);
-
         // creating the paper
         int[][] paper = new int[maxY][maxX];
         for (int y = 0; y < maxY; y++) {
