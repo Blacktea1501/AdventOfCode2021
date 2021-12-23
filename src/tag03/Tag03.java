@@ -41,8 +41,9 @@ public class Tag03 {
             }
             char max = (ones >= zeroes ? '1' : '0');
             for (int row = oxygen.size() - 1; row >= 0; row--) {
-                if (oxygen.get(row).charAt(col) != max)
+                if (oxygen.get(row).charAt(col) != max){
                     oxygen.remove(row);
+                }
             }
             col++;
         }
