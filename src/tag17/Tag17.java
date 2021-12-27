@@ -1,8 +1,5 @@
 package tag17;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Tag17 {
     private static final int X_MIN = 185;
     private static final int X_MAX = 221;
