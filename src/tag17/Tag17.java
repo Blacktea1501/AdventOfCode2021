@@ -11,18 +11,18 @@ public class Tag17 {
 
 
     public static void main(String[] args) {
-        List<Probe> initialValues = new ArrayList<>();
         System.out.println("Part 1: " + (Y_MIN * (Y_MIN + 1)) / 2);
         int steps = Math.max(X_MAX, -Y_MIN*3);
+        int cnt = 0;
         for (int x = 1; x <= X_MAX ; x++) {
             for (int y = Y_MIN; y <= -Y_MIN; y++) {
               Probe p = new Probe(x, y);
               if (hitsTarget(p, steps)){
-                  initialValues.add(p);
+                  cnt++;
               }
             }
         }
-        System.out.println(initialValues.size());
+        System.out.println(cnt);
         /*int steps = getSteps(new Probe(0, 121));
         for (int i = 1; i < X_MAX; i++) {
             Probe newProbe = new Probe(i, 0);
